@@ -1,5 +1,4 @@
-Finish angle cal code to generate contants
-finish set
-add ability for degree/radian config based on use input
-add ability to check if the user angles don't add up
-figure out a way to do static_assert() in labview
+clean refnum_get_set.vi
+finish refnum set
+finish refnum get
+maybe add re-cal angles

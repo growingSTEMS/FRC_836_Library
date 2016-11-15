@@ -1,4 +1,0 @@
-clean refnum_get_set.vi
-finish refnum set
-finish refnum get
-maybe add re-cal angles

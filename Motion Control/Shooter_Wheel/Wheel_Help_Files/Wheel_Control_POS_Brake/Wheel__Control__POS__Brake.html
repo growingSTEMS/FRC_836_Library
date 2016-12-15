@@ -1,0 +1,507 @@
+<HTML>
+<HEAD>
+<TITLE>Wheel.lvlib:Wheel_Control_POS_Brake.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Wheel.lvlib:Wheel_Control_POS_Brake.vi"></A><H2>Wheel.lvlib:Wheel_Control_POS_Brake.vi</H2>
+<P>Help by FRC Team 836 - The RoboBees</P>
+<P></P>
+<P>This VI stops a wheel at the indicated postion using the tbh (Take Back Half) control VI.</P>
+<P><IMG SRC="Wheel_lvlib_Wheel__Control__POS__Brakec.png" ALT="Wheel.lvlib:Wheel_Control_POS_Brake.vi"></P>
+<P><IMG SRC="Wheel_lvlib_Wheel__Control__POS__Brakep.png" ALT="Wheel.lvlib:Wheel_Control_POS_Brake.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Wheel DevRef In</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdatavalref.png" ALT="cdatavalref"></P>
+</TD>
+<TD>
+<B>Shooter Config reference</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Shooter Data</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>MotorControlDevRef</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Control Mode</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdlrn.png" ALT="cdlrn"></P>
+</TD>
+<TD>
+<B>Semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Max Vout</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>TalonSRX Control Mode</B> <P><B>Control Mode</B> specifies how the Talon SRX will control the motor.  Percent VBus is the standard open-loop mode that is also accessible via the PWM interface on the Talon SRX.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cfiforn.png" ALT="cfiforn"></P>
+</TD>
+<TD>
+<B>Set Point</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cfiforn.png" ALT="cfiforn"></P>
+</TD>
+<TD>
+<B>Actual</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CounterDevRef in</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DevStatus</B> <P><B>error in</B> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error. </P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>CntIndex</B> </TD>
+</TR>
+</Table>
+</UL>
+<P><IMG SRC="Wheel_lvlib_Wheel__Control__POS__Braked.png" ALT="Wheel.lvlib:Wheel_Control_POS_Brake.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="Semaphore_RefNumctli.png" ALT="Semaphore RefNum"></P>
+</TD>
+<TD>
+<B><P>Semaphore RefNum</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Utility\semaphor.llb\Semaphore RefNum</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="WPI__PWMDeadbandctli.png" ALT="WPI_PWMDeadband.ctl"></P>
+</TD>
+<TD>
+<B><P>WPI_PWMDeadband.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\WPI\PWM\WPI_PWMDeadband.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="FPGA__DIOPWMChannelctli.png" ALT="FPGA_DIOPWMChannel.ctl"></P>
+</TD>
+<TD>
+<B><P>FPGA_DIOPWMChannel.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\SystemInterfaces\DIO\FPGA_DIOPWMChannel.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="WPI__CANTalonSRX__APIControlModectli.png" ALT="WPI_CANTalonSRX_APIControlMode.ctl"></P>
+</TD>
+<TD>
+<B><P>WPI_CANTalonSRX_APIControlMode.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\WPI\CAN\TalonSRX\WPI_CANTalonSRX_APIControlMode.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="WPI__CANJaguar__ControlModectli.png" ALT="WPI_CANJaguar_ControlMode.ctl"></P>
+</TD>
+<TD>
+<B><P>WPI_CANJaguar_ControlMode.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\WPI\CAN\Jaguar\SubVIs\WPI_CANJaguar_ControlMode.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="WPI__MotorControlTypectli.png" ALT="WPI_MotorControlType.ctl"></P>
+</TD>
+<TD>
+<B><P>WPI_MotorControlType.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\WPI\MotorControl\WPI_MotorControlType.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="WPI__MotorControlDeviceRefctli.png" ALT="WPI_MotorControlDeviceRef.ctl"></P>
+</TD>
+<TD>
+<B><P>WPI_MotorControlDeviceRef.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\WPI\MotorControl\WPI_MotorControlDeviceRef.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="WPI__MotorControlSetOutputi.png" ALT="WPI_MotorControlSetOutput.vi"></P>
+</TD>
+<TD>
+<B><P>WPI_MotorControlSetOutput.vi</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\WPI\MotorControl\WPI_MotorControlSetOutput.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="Wheel_lvlib_WheelControlctli.png" ALT="Wheel.lvlib:WheelControl.ctl"></P>
+</TD>
+<TD>
+<B><P>Wheel.lvlib:WheelControl.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\user.lib\836-Library\Motion Control\Shooter_Wheel\WheelControl.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="WPI__CounterGeti.png" ALT="WPI_CounterGet.vi"></P>
+</TD>
+<TD>
+<B><P>WPI_CounterGet.vi</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\WPI\Counter\WPI_CounterGet.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="Wheel_lvlib_Datactli.png" ALT="Wheel.lvlib:Data.ctl"></P>
+</TD>
+<TD>
+<B><P>Wheel.lvlib:Data.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\user.lib\836-Library\Motion Control\Shooter_Wheel\Data.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="WPI__CounterDevRefctli.png" ALT="WPI_CounterDevRef.ctl"></P>
+</TD>
+<TD>
+<B><P>WPI_CounterDevRef.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\WPI\Counter\WPI_CounterDevRef.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tbhi.png" ALT="tbh.vi"></P>
+</TD>
+<TD>
+<B><P>tbh.vi</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\user.lib\836-Library\Motion Control\tbh.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="FPGA__CounterCtrSystemIndexctli.png" ALT="FPGA_CounterCtrSystemIndex.ctl"></P>
+</TD>
+<TD>
+<B><P>FPGA_CounterCtrSystemIndex.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\SystemInterfaces\Counter\FPGA_CounterCtrSystemIndex.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="Wheel_lvlib_Configctli.png" ALT="Wheel.lvlib:Config.ctl"></P>
+</TD>
+<TD>
+<B><P>Wheel.lvlib:Config.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\user.lib\836-Library\Motion Control\Shooter_Wheel\Config.ctl</P>
+</TD>
+</TR>
+</Table>
+<P>&quot;Wheel.lvlib:Wheel_Control_POS_Brake.vi History&quot;</P>
+<P>Current Revision:   18</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="Wheel_lvlib_Wheel__Control__POS__Brakeh.png" ALT="Wheel.lvlib:Wheel_Control_POS_Brake.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

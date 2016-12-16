@@ -11,17 +11,17 @@
 </Property>
 	<Item Name="Private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-		<Item Name="Shooter Wheel GetSet.vi" Type="VI" URL="/&lt;userlib&gt;/836 Library/Motion Control/Shooter Wheel/Shooter Wheel GetSet.vi"/>
+		<Item Name="Shooter Wheel GetSet.vi" Type="VI" URL="/&lt;userlib&gt;/junk/836-Library/Motion_Control/Shooter_Wheel/Shooter Wheel GetSet.vi"/>
 	</Item>
 	<Item Name="Public" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
-		<Item Name="Shooter Wheel Control.vi" Type="VI" URL="/&lt;userlib&gt;/836 Library/Motion Control/Shooter Wheel/Shooter Wheel Control.vi"/>
-		<Item Name="Shooter Wheel Get RPM.vi" Type="VI" URL="/&lt;userlib&gt;/836 Library/Motion Control/Shooter Wheel/Shooter Wheel Get RPM.vi"/>
-		<Item Name="Shooter Wheel Get.vi" Type="VI" URL="/&lt;userlib&gt;/836 Library/Motion Control/Shooter Wheel/Shooter Wheel Get.vi"/>
-		<Item Name="Shooter Wheel Set RPM.vi" Type="VI" URL="/&lt;userlib&gt;/836 Library/Motion Control/Shooter Wheel/Shooter Wheel Set RPM.vi"/>
-		<Item Name="Shooter Wheel Set.vi" Type="VI" URL="/&lt;userlib&gt;/836 Library/Motion Control/Shooter Wheel/Shooter Wheel Set.vi"/>
-		<Item Name="ShooterConfig.ctl" Type="VI" URL="/&lt;userlib&gt;/836 Library/Motion Control/Shooter Wheel/ShooterConfig.ctl"/>
-		<Item Name="ShooterControl.ctl" Type="VI" URL="/&lt;userlib&gt;/836 Library/Motion Control/Shooter Wheel/ShooterControl.ctl"/>
-		<Item Name="ShooterData.ctl" Type="VI" URL="/&lt;userlib&gt;/836 Library/Motion Control/Shooter Wheel/ShooterData.ctl"/>
+		<Item Name="Shooter Wheel Control.vi" Type="VI" URL="/&lt;userlib&gt;/junk/836-Library/Motion_Control/Shooter_Wheel/Shooter Wheel Control.vi"/>
+		<Item Name="Shooter Wheel Get RPM.vi" Type="VI" URL="/&lt;userlib&gt;/junk/836-Library/Motion_Control/Shooter_Wheel/Shooter Wheel Get RPM.vi"/>
+		<Item Name="Shooter Wheel Get.vi" Type="VI" URL="/&lt;userlib&gt;/junk/836-Library/Motion_Control/Shooter_Wheel/Shooter Wheel Get.vi"/>
+		<Item Name="Shooter Wheel Set RPM.vi" Type="VI" URL="/&lt;userlib&gt;/junk/836-Library/Motion_Control/Shooter_Wheel/Shooter Wheel Set RPM.vi"/>
+		<Item Name="Shooter Wheel Set.vi" Type="VI" URL="/&lt;userlib&gt;/junk/836-Library/Motion_Control/Shooter_Wheel/Shooter Wheel Set.vi"/>
+		<Item Name="ShooterConfig.ctl" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/ShooterConfig.ctl"/>
+		<Item Name="ShooterControl.ctl" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/ShooterControl.ctl"/>
+		<Item Name="ShooterData.ctl" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/ShooterData.ctl"/>
 	</Item>
 </Library>

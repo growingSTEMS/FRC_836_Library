@@ -1,0 +1,460 @@
+<HTML>
+<HEAD>
+<TITLE>Pneumatic_Sensor_Loop.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Pneumatic_Sensor_Loop.vi"></A><H2>Pneumatic_Sensor_Loop.vi</H2>
+<P>Help by FRC Team 836 - The RoboBees</P>
+<P></P>
+<P>This VI configures the sensors for the pneumatics.</P>
+<P><IMG SRC="Pneumatic__Sensor__Loopc.png" ALT="Pneumatic_Sensor_Loop.vi"></P>
+<P><IMG SRC="Pneumatic__Sensor__Loopp.png" ALT="Pneumatic_Sensor_Loop.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Cluster</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cqueuern.png" ALT="cqueuern"></P>
+</TD>
+<TD>
+<B>Status Queue</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cfiforn.png" ALT="cfiforn"></P>
+</TD>
+<TD>
+<B>Status Loop</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Value</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Solenoid Configuration</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Normal Timing</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Forward</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Reverse</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Feedback Forward</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Feedback Reverse</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Analog Thresholds</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Forward</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Reverse</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Timeout</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Forward</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Reverse</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>AIDeviceRef</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DevStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Analog Channel</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DigitalInputDevRef</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DevStatus</B> <P><B>error in</B> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error. </P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Priority</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci64.png" ALT="ci64"></P>
+</TD>
+<TD>
+<B>Period</B> </TD>
+</TR>
+</Table>
+<P><IMG SRC="Pneumatic__Sensor__Loopd.png" ALT="Pneumatic_Sensor_Loop.vi"></P>
+<P><IMG SRC="Pneumatic__Sensor__Loopd1.png" ALT="Pneumatic_Sensor_Loop.vi"></P>
+<P><IMG SRC="Pneumatic__Sensor__Loopd2.png" ALT="Pneumatic_Sensor_Loop.vi"></P>
+<P><IMG SRC="Pneumatic__Sensor__Loopd3.png" ALT="Pneumatic_Sensor_Loop.vi"></P>
+<P><IMG SRC="Pneumatic__Sensor__Loopd4.png" ALT="Pneumatic_Sensor_Loop.vi"></P>
+<P><IMG SRC="Pneumatic__Sensor__Loopd5.png" ALT="Pneumatic_Sensor_Loop.vi"></P>
+<P><IMG SRC="Pneumatic__Sensor__Loopd6.png" ALT="Pneumatic_Sensor_Loop.vi"></P>
+<P><IMG SRC="Pneumatic__Sensor__Loopd7.png" ALT="Pneumatic_Sensor_Loop.vi"></P>
+<P><IMG SRC="Pneumatic__Sensor__Loopd8.png" ALT="Pneumatic_Sensor_Loop.vi"></P>
+<P><IMG SRC="Pneumatic__Sensor__Loopd9.png" ALT="Pneumatic_Sensor_Loop.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="FPGA__AIChannelctli.png" ALT="FPGA_AIChannel.ctl"></P>
+</TD>
+<TD>
+<B><P>FPGA_AIChannel.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\SystemInterfaces\AI\FPGA_AIChannel.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="WPI__AnalogChannelDevRefctli.png" ALT="WPI_AnalogChannelDevRef.ctl"></P>
+</TD>
+<TD>
+<B><P>WPI_AnalogChannelDevRef.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\WPI\AnalogChannel\WPI_AnalogChannelDevRef.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="WPI__AnalogChannelGetAverageVoltagei.png" ALT="WPI_AnalogChannelGetAverageVoltage.vi"></P>
+</TD>
+<TD>
+<B><P>WPI_AnalogChannelGetAverageVoltage.vi</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\WPI\AnalogChannel\WPI_AnalogChannelGetAverageVoltage.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="FPGA__DIOChannelctli.png" ALT="FPGA_DIOChannel.ctl"></P>
+</TD>
+<TD>
+<B><P>FPGA_DIOChannel.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\SystemInterfaces\DIO\FPGA_DIOChannel.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="WPI__DigitalInputGetValuei.png" ALT="WPI_DigitalInputGetValue.vi"></P>
+</TD>
+<TD>
+<B><P>WPI_DigitalInputGetValue.vi</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\WPI\DigitalInput\WPI_DigitalInputGetValue.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="WPI__DigitalInputDevRefctli.png" ALT="WPI_DigitalInputDevRef.ctl"></P>
+</TD>
+<TD>
+<B><P>WPI_DigitalInputDevRef.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\WPI\DigitalInput\WPI_DigitalInputDevRef.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="Stablei.png" ALT="Stable.vi"></P>
+</TD>
+<TD>
+<B><P>Stable.vi</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\user.lib\836-Library\Logic\Stable.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="Solenoid__Configurectli.png" ALT="Solenoid_Configure.ctl"></P>
+</TD>
+<TD>
+<B><P>Solenoid_Configure.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\user.lib\836-Library\Pneumatics\Support_Code\Solenoid_Configure.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="Feedback__Methodctli.png" ALT="Feedback_Method.ctl"></P>
+</TD>
+<TD>
+<B><P>Feedback_Method.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\user.lib\836-Library\Pneumatics\Support_Code\Feedback_Method.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="Pneumatics__Configurationctli.png" ALT="Pneumatics_Configuration.ctl"></P>
+</TD>
+<TD>
+<B><P>Pneumatics_Configuration.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\user.lib\836-Library\Pneumatics\Support_Code\Pneumatics_Configuration.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="WPI__SolenoidValuectli.png" ALT="WPI_SolenoidValue.ctl"></P>
+</TD>
+<TD>
+<B><P>WPI_SolenoidValue.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\vi.lib\Rock Robotics\WPI\Solenoid\WPI_SolenoidValue.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="Pneumatic__Sensor__Loopctli.png" ALT="Pneumatic_Sensor_Loop.ctl"></P>
+</TD>
+<TD>
+<B><P>Pneumatic_Sensor_Loop.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\user.lib\836-Library\Pneumatics\Support_Code\Pneumatic_Sensor_Loop.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="Pneumatics__Statusctli.png" ALT="Pneumatics_Status.ctl"></P>
+</TD>
+<TD>
+<B><P>Pneumatics_Status.ctl</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\user.lib\836-Library\Pneumatics\Support_Code\Pneumatics_Status.ctl</P>
+</TD>
+</TR>
+</Table>
+<P>&quot;Pneumatic_Sensor_Loop.vi History&quot;</P>
+<P>Current Revision:   7</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="Pneumatic__Sensor__Looph.png" ALT="Pneumatic_Sensor_Loop.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

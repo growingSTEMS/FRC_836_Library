@@ -1,0 +1,181 @@
+<HTML>
+<HEAD>
+<TITLE>Velocity_Profile.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Velocity_Profile.vi"></A><H2>Velocity_Profile.vi</H2>
+<P>VI DESCRIPTION:</P>
+<P></P>
+<P>This VI provides control of a motor speed via a 'velocity profile'.  It requires a sensor input that is used to determine current position relative to a target position.  VI output (Motor Out) will</P>
+<P>be a function of how far the current distance is from the target, as prescribed by the input profile array.  </P>
+<P></P>
+<P>The motor value can be profiled to be progressively reduced as the target distance </P>
+<P>is approached, like a P controller, but the motor value will not reduce to zero until the target is reached, ensuring the objective is reached.</P>
+<P></P>
+<P>When position is near the hi or lo limit, the output can be no higher than a 'slow'</P>
+<P>value if (and only if) the position is continuing toward that limit - this reduces momentum prior to reaching a hard limit, which reduces positional overshoot.  Output will become zero </P>
+<P>upon reaching a limit, but still allow for a reverse motor command to move position away from the limit.</P>
+<P></P>
+<P>Use this only when the motor is NOT in a control loop (i.e. when under direct control from joystick).  To limit motor travel when using a control loop, simply coerce the setpoint to limits.</P>
+<P><IMG SRC="Velocity__Profilec.png" ALT="Velocity_Profile.vi"></P>
+<P><IMG SRC="Velocity__Profilep.png" ALT="Velocity_Profile.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Position Sense</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Rate Sense</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Set Point</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Reset</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c2ddbl.png" ALT="c2ddbl"></P>
+</TD>
+<TD>
+<B>Velocity Profile</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B></B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Rate Feedback</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>corr</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>coerce</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Motor</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>arrived</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Waveform Chart</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>gear</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Rate</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Accel</B> </TD>
+</TR>
+</Table>
+<P><IMG SRC="Velocity__Profiled.png" ALT="Velocity_Profile.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="JK_Latchi.png" ALT="JK Latch.vi"></P>
+</TD>
+<TD>
+<B><P>JK Latch.vi</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2015\user.lib\836-Library\Logic\JK Latch.vi</P>
+</TD>
+</TR>
+</Table>
+<P>&quot;Velocity_Profile.vi History&quot;</P>
+<P>Current Revision:   117</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="Velocity__Profileh.png" ALT="Velocity_Profile.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

@@ -11,6 +11,7 @@
 </Property>
 	<Item Name="Private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+<<<<<<< HEAD
 		<Item Name="Shooter_Wheel_GetSet.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion_Control/Shooter_Wheel/Shooter_Wheel_GetSet.vi"/>
 	</Item>
 	<Item Name="Public" Type="Folder">
@@ -23,5 +24,19 @@
 		<Item Name="ShooterConfig.ctl" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion_Control/Shooter_Wheel1/ShooterConfig.ctl"/>
 		<Item Name="ShooterControl.ctl" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion_Control/Shooter_Wheel1/ShooterControl.ctl"/>
 		<Item Name="ShooterData.ctl" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion_Control/Shooter_Wheel1/ShooterData.ctl"/>
+=======
+		<Item Name="Shooter_Wheel_GetSet.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Shooter_Wheel_GetSet.vi"/>
+	</Item>
+	<Item Name="Public" Type="Folder">
+		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
+		<Item Name="Shooter_Wheel_Control.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Shooter_Wheel_Control.vi"/>
+		<Item Name="Shooter_Wheel_Get.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Shooter_Wheel_Get.vi"/>
+		<Item Name="Shooter_Wheel_Get_RPM.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Shooter_Wheel_Get_RPM.vi"/>
+		<Item Name="Shooter_Wheel_Set.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Shooter_Wheel_Set.vi"/>
+		<Item Name="Shooter_Wheel_Set_RPM.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Shooter_Wheel_Set_RPM.vi"/>
+		<Item Name="ShooterConfig.ctl" Type="VI" URL="/&lt;userlib&gt;/836 Library/Motion Control/Shooter Wheel/ShooterConfig.ctl"/>
+		<Item Name="ShooterControl.ctl" Type="VI" URL="/&lt;userlib&gt;/836 Library/Motion Control/Shooter Wheel/ShooterControl.ctl"/>
+		<Item Name="ShooterData.ctl" Type="VI" URL="/&lt;userlib&gt;/836 Library/Motion Control/Shooter Wheel/ShooterData.ctl"/>
+>>>>>>> David
 	</Item>
 </Library>

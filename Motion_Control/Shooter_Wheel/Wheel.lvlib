@@ -11,6 +11,7 @@
 </Property>
 	<Item Name="Private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+<<<<<<< HEAD
 		<Item Name="Wheel_GetSet.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion_Control/Shooter_Wheel/Wheel_GetSet.vi"/>
 	</Item>
 	<Item Name="Public" Type="Folder">
@@ -26,5 +27,22 @@
 		<Item Name="Wheel_Set.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion_Control/Shooter_Wheel/Wheel_Set.vi"/>
 		<Item Name="Wheel_Set_Value.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion_Control/Shooter_Wheel/Wheel_Set_Value.vi"/>
 		<Item Name="WheelControl.ctl" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion_Control/Shooter_Wheel/WheelControl.ctl"/>
+=======
+		<Item Name="Wheel_GetSet.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Wheel_GetSet.vi"/>
+	</Item>
+	<Item Name="Public" Type="Folder">
+		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
+		<Item Name="Config.ctl" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Config.ctl"/>
+		<Item Name="Data.ctl" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Data.ctl"/>
+		<Item Name="Wheel_Control.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Wheel_Control.vi"/>
+		<Item Name="Wheel_Control_POS.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Wheel_Control_POS.vi"/>
+		<Item Name="Wheel_Control_POS_Brake.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Wheel_Control_POS_Brake.vi"/>
+		<Item Name="Wheel_Control_RPM.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Wheel_Control_RPM.vi"/>
+		<Item Name="Wheel_Get.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Wheel_Get.vi"/>
+		<Item Name="Wheel_Get_Value.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Wheel_Get_Value.vi"/>
+		<Item Name="Wheel_Set.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Wheel_Set.vi"/>
+		<Item Name="Wheel_Set_Value.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/Wheel_Set_Value.vi"/>
+		<Item Name="WheelControl.ctl" Type="VI" URL="/&lt;userlib&gt;/836-Library/Motion Control/Shooter_Wheel/WheelControl.ctl"/>
+>>>>>>> David
 	</Item>
 </Library>

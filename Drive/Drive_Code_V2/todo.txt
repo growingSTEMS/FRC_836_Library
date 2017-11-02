@@ -1,0 +1,2 @@
+add ereror handling for the drive code base
+  invalid commands being sent

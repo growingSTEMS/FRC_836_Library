@@ -1,2 +1,5 @@
 add ereror handling for the drive code base
   invalid commands being sent
+
+update control_loop/completely re-work control loop to be cleaner
+update commands to utilize the enum/variant method of grabbing command params

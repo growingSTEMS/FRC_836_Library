@@ -3,3 +3,5 @@ add ereror handling for the drive code base
 
 update control_loop/completely re-work control loop to be cleaner
 update commands to utilize the enum/variant method of grabbing command params
+
+add sending of "Do Nothing" commands when invalid commands are sent

@@ -4,3 +4,15 @@ make sensor code more generic
     named sensors that take a value of a type
     possibly stored in a map to RT FIFOs
   each command can utilize sensors as necessary
+  
+add sensor value update VIs
+
+create cluster that contains all possible drive values
+  e.g. X, Y, rotation, left, right
+  this will be useful for the portion of the drive loop that routes the PID output to the drive value set VI
+
+create VIs for each drive train that perform the commands
+  each VI will have a switch statement inside of it that switches based on command
+  command will perform the actions necessary to perform the action
+    calculate setpoints
+

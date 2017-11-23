@@ -21,3 +21,8 @@ Figure out how to handle drive values when the PID and Period update commands ar
   possible solutions
     write previous values through
     send most recently sent command before PID/Period update commands sent immediately after the PID/Period update command
+    
+add tolerances to the command finished checking for the notifier
+  this should be handled in the drive train process command VIs
+  
+update TankProcessCommmands.vi to utillize the actual left right of the tank drive system instead of passing everything through cheesyDrive

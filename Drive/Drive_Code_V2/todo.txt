@@ -16,3 +16,8 @@ create VIs for each drive train that perform the commands
   command will perform the actions necessary to perform the action
     calculate setpoints
 
+Figure out how to handle drive values when the PID and Period update commands are sent
+  driving shouldn't stop due to these commands
+  possible solutions
+    write previous values through
+    send most recently sent command before PID/Period update commands sent immediately after the PID/Period update command

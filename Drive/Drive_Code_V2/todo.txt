@@ -29,3 +29,14 @@ update TankProcessCommmands.vi to utillize the actual left right of the tank dri
 
 camera angle update needs to have the camera angle applied to the current gyro, otherwise the camera angle is meaningless to the robot
   add the camera angle to the current gyro reading to get the current camera reading.
+  
+create a document explaining what each command is and how to use them
+create a document explaining the process to add commands to the drive architecture
+  add a command send VI for the command
+  modify each drive trains' ValidCommmands VI to include the new command (either with the command being valid or not)
+  modify each drive trains' CommandProcess VI to be able to handle the new command (if it can)
+create a document explaining the process to add a new drive train to the drive architecture
+  create a CommandProcess VI for the new drive train that handles all of the comands it can
+  create a ValidCommands VI for the new drive train that generates the list of Valid commands the drive train can handle
+  add the drive train to the CreateDriveTrain polymorphic VI
+  create a CreateDriveTrain VI for the new drive train

@@ -7,10 +7,6 @@ make sensor code more generic
   
 add sensor value update VIs
 
-create cluster that contains all possible drive values
-  e.g. X, Y, rotation, left, right
-  this will be useful for the portion of the drive loop that routes the PID output to the drive value set VI
-
 create VIs for each drive train that perform the commands
   each VI will have a switch statement inside of it that switches based on command
   command will perform the actions necessary to perform the action
@@ -26,9 +22,6 @@ add tolerances to the command finished checking for the notifier
   this should be handled in the drive train process command VIs
   
 update TankProcessCommmands.vi to utillize the actual left right of the tank drive system instead of passing everything through cheesyDrive
-
-camera angle update needs to have the camera angle applied to the current gyro, otherwise the camera angle is meaningless to the robot
-  add the camera angle to the current gyro reading to get the current camera reading.
   
 create a document explaining what each command is and how to use them
 create a document explaining the process to add commands to the drive architecture
@@ -40,3 +33,5 @@ create a document explaining the process to add a new drive train to the drive a
   create a ValidCommands VI for the new drive train that generates the list of Valid commands the drive train can handle
   add the drive train to the CreateDriveTrain polymorphic VI
   create a CreateDriveTrain VI for the new drive train
+  
+update command send VIs to be cleaner on the front panel and ensure all their names are correct

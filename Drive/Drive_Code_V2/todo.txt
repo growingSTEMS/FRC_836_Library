@@ -35,3 +35,9 @@ create a document explaining the process to add a new drive train to the drive a
   create a CreateDriveTrain VI for the new drive train
   
 update command send VIs to be cleaner on the front panel and ensure all their names are correct
+
+possible concerns:
+sending the previous drive values through for PID and Period update will fix the
+robot stopping on those commands being recieved, but the robot will not
+continue proper behaviour, it will simply keep driving the way it did when those
+commands were sent. need a way to continue previous behaviour

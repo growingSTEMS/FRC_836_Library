@@ -41,3 +41,7 @@ sending the previous drive values through for PID and Period update will fix the
 robot stopping on those commands being recieved, but the robot will not
 continue proper behaviour, it will simply keep driving the way it did when those
 commands were sent. need a way to continue previous behaviour
+
+each command in the value selector portion of the control loop will need to pass in every single drive value from either the auto vals or
+the non-PID vals.
+  currently only the values necessary to make tank drive work are being properly assigned.

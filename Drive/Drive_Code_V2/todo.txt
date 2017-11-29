@@ -45,3 +45,5 @@ commands were sent. need a way to continue previous behaviour
 each command in the value selector portion of the control loop will need to pass in every single drive value from either the auto vals or
 the non-PID vals.
   currently only the values necessary to make tank drive work are being properly assigned.
+  
+create VI that can be used to grab set points for the PIDS

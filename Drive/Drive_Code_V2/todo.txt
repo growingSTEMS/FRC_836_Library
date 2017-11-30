@@ -47,3 +47,5 @@ the non-PID vals.
   currently only the values necessary to make tank drive work are being properly assigned.
   
 create VI that can be used to grab set points for the PIDS
+
+ability to negat PID outputs

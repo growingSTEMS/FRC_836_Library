@@ -49,3 +49,13 @@ the non-PID vals.
 create VI that can be used to grab set points for the PIDS
 
 ability to negat PID outputs
+
+tested commands:
+  tank drive
+  turn
+  drive distance
+  hold yaw
+  PID update
+  cheesy drive
+  Update Period
+  Update PID Inversions

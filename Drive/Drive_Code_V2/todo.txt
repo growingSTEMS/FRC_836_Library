@@ -1,12 +1,9 @@
-update control_loop/completely re-work control loop to be cleaner
 make sensor code more generic
   have ability to create sensors on the fly
     named sensors that take a value of a type
     possibly stored in a map to RT FIFOs
   each command can utilize sensors as necessary
   
-add sensor value update VIs
-
 create VIs for each drive train that perform the commands
   each VI will have a switch statement inside of it that switches based on command
   command will perform the actions necessary to perform the action
@@ -18,8 +15,8 @@ Figure out how to handle drive values when the PID and Period update commands ar
     write previous values through
     send most recently sent command before PID/Period update commands sent immediately after the PID/Period update command
     
-add tolerances to the command finished checking for the notifier
-  this should be handled in the drive train process command VIs
+        add tolerances to the command finished checking for the notifier
+          this should be handled in the drive train process command VIs
   
 update TankProcessCommmands.vi to utillize the actual left right of the tank drive system instead of passing everything through cheesyDrive
   
@@ -46,7 +43,7 @@ each command in the value selector portion of the control loop will need to pass
 the non-PID vals.
   currently only the values necessary to make tank drive work are being properly assigned.
   
-create VI that can be used to grab set points for the PIDS
+        create VI that can be used to grab set points for the PIDS
 
 ability to negat PID outputs
 

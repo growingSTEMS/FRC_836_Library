@@ -43,8 +43,10 @@ each command in the value selector portion of the control loop will need to pass
 the non-PID vals.
   currently only the values necessary to make tank drive work are being properly assigned.
   
-        create VI that can be used to grab set points for the PIDS
-
-ability to negat PID outputs
 
 test the camera commands
+
+add ability to set conditions for when the commands are finished
+  current capability will be tolerances based upon sensor readings
+    sensors used are determined by the current command
+  

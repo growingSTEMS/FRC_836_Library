@@ -3,7 +3,7 @@ make sensor code more generic
     named sensors that take a value of a type
     possibly stored in a map to RT FIFOs
   each command can utilize sensors as necessary
-  
+
 create VIs for each drive train that perform the commands
   each VI will have a switch statement inside of it that switches based on command
   command will perform the actions necessary to perform the action
@@ -19,7 +19,7 @@ Figure out how to handle drive values when the PID and Period update commands ar
           this should be handled in the drive train process command VIs
   
 update TankProcessCommmands.vi to utillize the actual left right of the tank drive system instead of passing everything through cheesyDrive
-  
+
 create a document explaining what each command is and how to use them
 create a document explaining the process to add commands to the drive architecture
   add a command send VI for the command
@@ -42,11 +42,10 @@ commands were sent. need a way to continue previous behaviour
 each command in the value selector portion of the control loop will need to pass in every single drive value from either the auto vals or
 the non-PID vals.
   currently only the values necessary to make tank drive work are being properly assigned.
-  
+
 
 test the camera commands
 
 add ability to set conditions for when the commands are finished
   current capability will be tolerances based upon sensor readings
     sensors used are determined by the current command
-  

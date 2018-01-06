@@ -1,0 +1,51 @@
+make sensor code more generic
+  have ability to create sensors on the fly
+    named sensors that take a value of a type
+    possibly stored in a map to RT FIFOs
+  each command can utilize sensors as necessary
+  
+create VIs for each drive train that perform the commands
+  each VI will have a switch statement inside of it that switches based on command
+  command will perform the actions necessary to perform the action
+    calculate setpoints
+
+Figure out how to handle drive values when the PID and Period update commands are sent
+  driving shouldn't stop due to these commands
+  possible solutions
+    write previous values through
+    send most recently sent command before PID/Period update commands sent immediately after the PID/Period update command
+    
+        add tolerances to the command finished checking for the notifier
+          this should be handled in the drive train process command VIs
+  
+update TankProcessCommmands.vi to utillize the actual left right of the tank drive system instead of passing everything through cheesyDrive
+
+create a document explaining what each command is and how to use them
+create a document explaining the process to add commands to the drive architecture
+  add a command send VI for the command
+  modify each drive trains' ValidCommmands VI to include the new command (either with the command being valid or not)
+  modify each drive trains' CommandProcess VI to be able to handle the new command (if it can)
+create a document explaining the process to add a new drive train to the drive architecture
+  create a CommandProcess VI for the new drive train that handles all of the comands it can
+  create a ValidCommands VI for the new drive train that generates the list of Valid commands the drive train can handle
+  add the drive train to the CreateDriveTrain polymorphic VI
+  create a CreateDriveTrain VI for the new drive train
+  
+update command send VIs to be cleaner on the front panel and ensure all their names are correct
+
+possible concerns:
+sending the previous drive values through for PID and Period update will fix the
+robot stopping on those commands being recieved, but the robot will not
+continue proper behaviour, it will simply keep driving the way it did when those
+commands were sent. need a way to continue previous behaviour
+
+each command in the value selector portion of the control loop will need to pass in every single drive value from either the auto vals or
+the non-PID vals.
+  currently only the values necessary to make tank drive work are being properly assigned.
+
+
+test the camera commands
+
+add ability to set conditions for when the commands are finished
+  current capability will be tolerances based upon sensor readings
+    sensors used are determined by the current command

@@ -1,0 +1,6 @@
+WPI Internal numbering for motors alternates left and right (starting with the left) and goes from read to front of robot
+  example: 4 motor drive would be:
+    Motors[0]: rear left
+    Motors[1]: rear right
+    Motors[2]: front left
+    Motors[3]: front right

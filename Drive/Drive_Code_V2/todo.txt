@@ -50,5 +50,3 @@ test the camera commands
 add ability to set conditions for when the commands are finished
   current capability will be tolerances based upon sensor readings
     sensors used are determined by the current command
-
-finish implementing Invalid drive train

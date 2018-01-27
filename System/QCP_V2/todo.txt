@@ -1,0 +1,1 @@
+add auto file checking for qcp write file test

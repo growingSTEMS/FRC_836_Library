@@ -30,6 +30,7 @@ create a document explaining the process to add a new drive train to the drive a
   create a ValidCommands VI for the new drive train that generates the list of Valid commands the drive train can handle
   add the drive train to the CreateDriveTrain polymorphic VI
   create a CreateDriveTrain VI for the new drive train
+  see 1/13/18 notes
   
 update command send VIs to be cleaner on the front panel and ensure all their names are correct
 

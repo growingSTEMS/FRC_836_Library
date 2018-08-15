@@ -1,0 +1,2 @@
+add equality operators for all the classes: robot, subsystem, and command
+add checks in the add command and add subsystem Vis that check to make sure the value being added doesn't already exist

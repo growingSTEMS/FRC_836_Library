@@ -91,10 +91,19 @@
 	</Item>
 	<Item Name="Private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		<Item Name="init.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Robot/Subsystem/Private/init.vi">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(]!!!!%1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#J!=!!?!!!4%6.V9H.Z=X2F&lt;3ZM&gt;G.M98.T!!V4&gt;7*T?8.U:7UA&lt;X6U!":!5R"$&gt;8*S:7ZU)%.N:#"%982B!!!I1(!!(A!!$ERB9F:*26=A4W*K:7.U!!Z-97*73568)%^C;G6D&gt;!!!'%"!!!(`````!!=+5X6C=XFT&gt;'6N=Q!!&amp;%!Q`````QN$&gt;8*S:7ZU)%.N:!!A1(!!#!!!!!)!!"*$&lt;WVN97ZE)%2F&gt;'6S&lt;7FO:8)!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!+E"Q!"Y!!"%01W^N&lt;7&amp;O:#ZM&gt;G.M98.T!!^$&lt;WVN97ZE,GRW9WRB=X-!(%"!!!(`````!!Q/6G&amp;M;71A1W^N&lt;7&amp;O:(-!!!Z!-0````]%4G&amp;N:1!!+E"Q!"Y!!"-25X6C=XFT&gt;'6N,GRW9WRB=X-!$&amp;.V9H.Z=X2F&lt;3"J&lt;A!!91$Q!!Q!!Q!%!!1!"1!'!!A!#1!+!!M!$1!/!!]$!!"Y!!!.#!!!!!!!!!!!!!!.#Q!!%A!!!2)!!!%3!!!!%A!!!!I!!!%3!!!"%A!!!")!!!U!!!!-!!!!!!!!!!!!!!%!%!!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
+		</Item>
 	</Item>
 	<Item Name="Protected" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">3</Property>
-		<Item Name="setCurrentCmd.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Robot/Subsystem/Setters/setCurrentCmd.vi">
+		<Item Name="setCurrentCmd.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Robot/Subsystem/Protected/setCurrentCmd.vi">
 			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%J!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#J!=!!?!!!4%6.V9H.Z=X2F&lt;3ZM&gt;G.M98.T!!V4&gt;7*T?8.U:7UA&lt;X6U!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!#E"4"%2B&gt;'%!!!Z!-0````]%4G&amp;N:1!!+E"Q!"Y!!"-25X6C=XFT&gt;'6N,GRW9WRB=X-!$&amp;.V9H.Z=X2F&lt;3"J&lt;A!!6!$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!9!"Q!)!!E$!!"Y!!!.#!!!!!!!!!!!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!I!!!!+!!!"%A!!!*)!!!!!!1!+!!!!!!</Property>
 			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 			<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
@@ -136,5 +145,14 @@
 	</Item>
 	<Item Name="Setters" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
+		<Item Name="setCmdDeterminer.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Robot/Subsystem/Setters/setCmdDeterminer.vi">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;-!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!!Z!)1B6='2B&gt;'6E0Q!!+E"Q!"Y!!"-25X6C=XFT&gt;'6N,GRW9WRB=X-!$6.V9H.Z=X2F&lt;3"P&gt;81!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!A1(!!#!!!!!)!!"*$&lt;WVN97ZE)%2F&gt;'6S&lt;7FO:8)!!#J!=!!?!!!4%6.V9H.Z=X2F&lt;3ZM&gt;G.M98.T!!R4&gt;7*T?8.U:7UA;7Y!!'%!]!!-!!-!"!!&amp;!!9!"!!%!!1!"!!(!!1!#!!*!Q!!?!!!$1A!!!!!!!!*!!!!$1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!")!!!!3!!!.!!!!$!!!!!!!!!!!!!!"!!I!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">16777216</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1107820560</Property>
+		</Item>
 	</Item>
 </LVClass>

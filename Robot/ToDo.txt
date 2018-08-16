@@ -1,2 +1,10 @@
 add equality operators for all the classes: robot, subsystem, and command
 add checks in the add command and add subsystem Vis that check to make sure the value being added doesn't already exist
+in subsystem constructor, add a default command determiner VI reference that returns the most recently sent command
+  this VI is purely for if the subsystem doesn't take one in. if a command determiner VI is provided, it should be used.
+add setter in subsystem for setting the command determiner
+  allows for dynamic changing of how commands are processed, useful if we want to process them differently in auto than tele
+add ability for each command to know where it was sent from.
+  probably add a private field "calledFrom" and every in sendCommand the field gets populated with a callChain.VI or something
+  
+consider making subsystem a friend of command.

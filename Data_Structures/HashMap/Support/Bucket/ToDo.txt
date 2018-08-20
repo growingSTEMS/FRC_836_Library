@@ -1,2 +1,4 @@
 Go through and make all accessors const
   in LV this means feed the in class directly to the out class instead of running it through a case structure
+  
+For NoThrow VIs, remove the error out output
